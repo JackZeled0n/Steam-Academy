@@ -49,11 +49,11 @@ header,
 }
 
 .cream-bg-steam {
-  background-color: --cream-bg;
+  background-color: var(--cream-bg);
 }
 
 .cream-text-steam {
-  color: --cream-bg;
+  color: var(--cream-bg);
 }
 
 .teal-bg-steam {
@@ -67,3 +67,21 @@ header,
 #steam .nav-link {
   color: #283555;
 }
+
+#logo {
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%); 
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%); 
+  -o-transition: .5s ease-in-out;
+}
+
+#logo:hover {
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .5s ease-in-out;
+} 
