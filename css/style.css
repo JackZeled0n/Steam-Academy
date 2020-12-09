@@ -1,0 +1,69 @@
+:root {
+  --cream-bg: #fbf8f6;
+}
+
+body {
+  font-family: "Rubik";
+  background-color: var(--cream-bg);
+}
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 650px;
+  }
+}
+
+.orange-bg-steam {
+  background-color: #e16f18;
+}
+
+.orange-text-steam {
+  color: #e16f18;
+}
+
+.blue-bg-steam {
+  background-color: #283555;
+}
+
+.blue-text-steam {
+  color: #283555;
+}
+
+.cream-bg-steam {
+  background-color: --cream-bg;
+}
+
+.cream-text-steam {
+  color: --cream-bg;
+}
+
+.teal-bg-steam {
+  background-color: #34a7a2;
+}
+
+.teal-text-steam {
+  color: #34a7a2;
+}
+
+#steam .nav-link {
+  color: #283555;
+}
