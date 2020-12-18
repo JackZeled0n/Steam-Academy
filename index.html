@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Material Design Bootstrap -->
   <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Custom styles -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -86,8 +88,7 @@
 
           <ul class="navbar-nav ml-auto">
             <li class="nav-item avatar">
-              <img src="img/eds-full.png" class="rounded-circle z-depth-0"
-                  alt="avatar image" height="35">
+              <img src="img/eds-full.png" class="rounded-circle z-depth-0" alt="avatar image" height="35">
             </li>
           </ul>
 
@@ -97,32 +98,42 @@
     </nav>
     <!--/.Navbar -->
 
+
+
     <!-- Intro -->
     <div class="d-md-flex h-md-100 align-items-center">
 
-      <!-- First Half -->
 
-      <div class="col-md-6 p-0 h-md-100">
+      <div class="col-md-6 h-md-100">
         <div class="text-white d-md-flex align-items-center h-100 p-5 justify-content-center">
-          <div class="logoarea pt-5 pb-5">
-            <div class="container">
-              <img src="img/steam full.png" class="img-fluid" width="700" alt="steam logo">
-              <h1 class="mt-3 thick blue-text-steam">
-                <i>
-                  Inspirando el desarrollo técnico-profesional en la comunidad estudiantil nicaragüense.
-                </i>
+          <div class="py-5">
+            <div class="container-fluid">
+              <img src="img/steam full.png" class="img-fluid width-logo animate__animated animate__slideInDown"
+                alt="steam logo">
+
+              <h1 class="h1-responsive heading display-4 blue-text-steam mt-5 animate__animated animate__slideInUp">
+                Inspirando el desarrollo técnico-profesional en la comunidad estudiantil nicaragüense.
               </h1>
+
+              <div class="hide-mouse-effect">
+                <div class="carousel-caption">
+                  <div class="arrow bounce blue-text-steam">
+                    <a class="fa fa-arrow-down fa-2x"></a>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Second Half -->
 
-      <div class="col-md-6 p-0 bg-white h-md-100 ">
-        <div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center background-space">
-          <!-- <img src="img/Students/students.jpg" class="img-fluid" alt=""> -->
 
+
+      <div class="col-md-6 p-0 h-100">
+        <div
+          class="d-flex align-items-center h-100 justify-content-center background-space animate__animated animate__fadeInLeft">
         </div>
       </div>
 
@@ -131,11 +142,11 @@
 
   </header>
 
-  <!-- <div style="height: 100vh">
+  <div style="height: 100vh">
     <div class="flex-center flex-column">
       <h5 class="animated fadeIn mb-3">Steam Academy</h5>
     </div>
-  </div> -->
+  </div>
 
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
