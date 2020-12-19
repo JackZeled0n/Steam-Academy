@@ -69,11 +69,11 @@ header,
 }
 
 .width-logo {
-  width: 650px;
+  width: 700px;
 }
 
 .background-space {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/Students/students.jpg") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -134,9 +134,19 @@ header,
 }
 
 @media only screen and (max-width: 768px) {
- 
+  .hide-mouse-effect {
+    display: none !important;
+  }
 }
 
 .animate__animated.animate__fadeInLeft {
   --animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeInRight {
+  --animate-duration: 3.5s;
+}
+
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 3.5s;
 }

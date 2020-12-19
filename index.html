@@ -30,10 +30,19 @@
 
 <body>
 
+  <!--Loader-->
+  <div id="mdb-preloader" class="flex-center bg-white">
+    <div class="row p-5">
+      <div class="col-12">
+        <img src="img/steam full.png" class="img-fluid width-logo" alt="steam logo">
+      </div>
+    </div>
+  </div>
+
   <header>
 
     <!--Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar white">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar white animate__animated animate__fadeInDown">
 
       <div class="container-fluid mx-5">
         <!-- Navbar brand -->
@@ -88,7 +97,7 @@
 
           <ul class="navbar-nav ml-auto">
             <li class="nav-item avatar">
-              <img src="img/eds-full.png" class="rounded-circle z-depth-0" alt="avatar image" height="35">
+              <img src="img/eds-full.png" alt="eds logo" height="35">
             </li>
           </ul>
 
@@ -98,24 +107,20 @@
     </nav>
     <!--/.Navbar -->
 
-
-
     <!-- Intro -->
-    <div class="d-md-flex h-md-100 align-items-center">
-
-
+    <div class="d-md-flex h-md-100 align-items-center ">
       <div class="col-md-6 h-md-100">
         <div class="text-white d-md-flex align-items-center h-100 p-5 justify-content-center">
           <div class="py-5">
-            <div class="container-fluid">
-              <img src="img/steam full.png" class="img-fluid width-logo animate__animated animate__slideInDown"
+            <div class="container-fluid mt-5 mt-sm-5 mt-md-0 mt-lg-0 mt-xl-0">
+              <img src="img/steam full.png" class="img-fluid width-logo animate__animated animate__fadeIn animate__delay-3s"
                 alt="steam logo">
 
-              <h1 class="h1-responsive heading display-4 blue-text-steam mt-5 animate__animated animate__slideInUp">
+              <h1 class="h1-responsive heading display-4 blue-text-steam mt-5 animate__animated animate__fadeIn animate__delay-3s">
                 Inspirando el desarrollo técnico-profesional en la comunidad estudiantil nicaragüense.
               </h1>
 
-              <div class="hide-mouse-effect">
+              <div class="hide-mouse-effect animate__animated animate__fadeIn animate__delay-3s">
                 <div class="carousel-caption">
                   <div class="arrow bounce blue-text-steam">
                     <a class="fa fa-arrow-down fa-2x"></a>
@@ -133,7 +138,7 @@
 
       <div class="col-md-6 p-0 h-100">
         <div
-          class="d-flex align-items-center h-100 justify-content-center background-space animate__animated animate__fadeInLeft">
+          class="d-flex align-items-center h-100 justify-content-center background-space animate__animated animate__fadeInRight">
         </div>
       </div>
 
@@ -157,7 +162,12 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Custom scripts -->
-  <script type="text/javascript"></script>
+  <script type="text/javascript">
+    $(window).on('load', function () {
+      $('#mdb-preloader').delay(1000).fadeOut(300);
+    });
+
+  </script>
 
 </body>
 
