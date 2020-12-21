@@ -82,6 +82,16 @@ header,
   background-position: center center;
 }
 
+.student-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/4.jpg") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
 @media (min-width: 768px) {
   .h-md-100 {
     height: 100vh;
@@ -149,4 +159,13 @@ header,
 
 .animate__animated.animate__fadeInDown {
   --animate-duration: 3.5s;
+}
+
+.item {
+  width: 80%;
+  min-height: 80%;
+  max-height: auto;
+  float: left;
+  margin: 3px;
+  padding: 3px;
 }
